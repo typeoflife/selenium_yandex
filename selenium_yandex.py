@@ -77,8 +77,6 @@ class ChromeTest(unittest.TestCase):
             imput_tel.send_keys(Keys.RETURN)
             text_message = driver.find_element(
                 By.XPATH, "//div[@CLASS='Textinput-Hint Textinput-Hint_state_error']").text
-
-
         except NoSuchElementException:
             return False
 
